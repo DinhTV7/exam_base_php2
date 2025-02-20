@@ -1,0 +1,22 @@
+{
+    "name": "admin/exam_base_php2",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "common/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "DinhTV7",
+            "email": "dinhtv7@fpt.edu.vn"
+        }
+    ],
+    "require": {
+        "eftec/bladeone": "^4.17",
+        "bramus/router": "^1.6"
+    }
+}
