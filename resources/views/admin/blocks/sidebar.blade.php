@@ -4,9 +4,6 @@
             <a href="{{ route('admin') }}" class="nav-link text-white">
                 <i class="fas fa-tachometer-alt"></i> Dashboard
             </a>
-            <a href="{{ route('admin/products') }}" class="nav-link text-white">
-                <i class="fas fa-tachometer-alt"></i> Sản phẩm
-            </a>
         </li>
     </ul>
 </div>

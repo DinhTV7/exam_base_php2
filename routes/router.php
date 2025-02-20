@@ -16,16 +16,6 @@ $router->mount('/admin', function () use ($router) {
     $router->get('/', function () {
         return view('admin.dashboard');
     });
-
-    // Nhóm đường dẫn quản lý sản phẩm
-    $router->mount('/products', function () use ($router) {
-        $router->get('/',               ProductController::class . '@index');
-        $router->get('/create',         ProductController::class . '@create');
-        $router->post('/store',         ProductController::class . '@store');
-        $router->get('/{id}/edit',      ProductController::class . '@edit');
-        $router->post('/{id}/update',   ProductController::class . '@update');
-        $router->post('/{id}/delete',   ProductController::class . '@delete');
-    });
 });
 
 
